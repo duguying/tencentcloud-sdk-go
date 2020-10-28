@@ -92,6 +92,10 @@ func (r *BaseRequest) GetServiceDomain(service string) (domain string) {
 	return
 }
 
+func (r *BaseRequest) SetPath(path string) {
+	r.path = path
+}
+
 func (r *BaseRequest) SetDomain(domain string) {
 	r.domain = domain
 }
